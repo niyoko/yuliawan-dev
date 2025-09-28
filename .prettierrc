@@ -1,0 +1,58 @@
+{
+  "tabWidth": 2,
+  "bracketSpacing": false,
+  "bracketSameLine": false,
+  "singleQuote": true,
+  "printWidth": 100,
+  "quoteProps": "as-needed",
+  "trailingComma": "all",
+  "arrowParens": "always",
+  "parser": "babel",
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": {
+        "parser": "json",
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": "**/*.json",
+      "options": {
+        "parser": "json",
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": "**/*.md",
+      "options": {
+        "parser": "markdown",
+        "proseWrap": "always"
+      }
+    },
+    {
+      "files": "**/*.scss",
+      "options": {
+        "parser": "scss"
+      }
+    },
+    {
+      "files": "**/*.css",
+      "options": {
+        "parser": "css"
+      }
+    },
+    {
+      "files": "**/*.js",
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": "**/*.jsx",
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}

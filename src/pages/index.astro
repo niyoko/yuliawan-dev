@@ -1,0 +1,89 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import {SITE_TITLE, SITE_DESCRIPTION} from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      main {
+        width: 960px;
+      }
+      .hero {
+        padding-bottom: 2em;
+        border-bottom: 1px solid #ddd;
+      }
+      .social-links {
+        display: flex;
+        gap: 1em;
+        margin-top: 1em;
+      }
+      .social-links a {
+        text-decoration: none;
+        color: var(--accent);
+      }
+      section {
+        margin-top: 2em;
+      }
+      .experience-item,
+      .project-item {
+        margin-bottom: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section class="hero">
+        <h1>Niyoko Yuliawan</h1>
+        <p>
+          Email: <a href="mailto:niyoko@yuliawan.dev">niyoko@yuliawan.dev</a>
+        </p>
+      </section>
+
+      <section id="work-experience">
+        <h2>Work Experience</h2>
+        <div class="experience-item">
+          <h3>Software Engineer at [Company Name]</h3>
+          <p>[Dates of Employment]</p>
+          <ul>
+            <li>[Responsibility or accomplishment]</li>
+            <li>[Responsibility or accomplishment]</li>
+            <li>[Responsibility or accomplishment]</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Junior Developer at [Company Name]</h3>
+          <p>[Dates of Employment]</p>
+          <ul>
+            <li>[Responsibility or accomplishment]</li>
+            <li>[Responsibility or accomplishment]</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+          <h3><a href="#">Project Title</a></h3>
+          <p>
+            Project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="project-item">
+          <h3><a href="#">Another Project</a></h3>
+          <p>
+            Project description. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

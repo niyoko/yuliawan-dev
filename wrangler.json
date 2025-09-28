@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "yuliawan-dev",
+  "compatibility_date": "2025-04-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./dist/_worker.js/index.js",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "workers_dev": false,
+  "route": {
+    "pattern": "yuliawan.dev",
+    "custom_domain": true
+  },
+  "build": {
+    "command": "yarn build"
+  },
+  "upload_source_maps": true
+}
