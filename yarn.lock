@@ -672,6 +672,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/source-sans-pro@npm:^5.2.5":
+  version: 5.2.5
+  resolution: "@fontsource/source-sans-pro@npm:5.2.5"
+  checksum: 10c0/4891631d076de226d05fe49f6fe6862c32fc7636992dfaf09da4ba9b6cdc689b3e2568a39a21e84027ce1f0bcdaec24adb26947f95ebad9e127cf2a729dc73de
+  languageName: node
+  linkType: hard
+
 "@img/colour@npm:^1.0.0":
   version: 1.0.0
   resolution: "@img/colour@npm:1.0.0"
@@ -5948,6 +5955,7 @@ __metadata:
     "@astrojs/mdx": "npm:^4.3.6"
     "@astrojs/rss": "npm:^4.0.12"
     "@astrojs/sitemap": "npm:^3.6.0"
+    "@fontsource/source-sans-pro": "npm:^5.2.5"
     "@types/node": "npm:^24.5.2"
     astro: "npm:^5.14.1"
     typescript: "npm:^5.9.2"
